@@ -15,3 +15,4 @@ const myCategoriEl = document.querySelector("#categories");
     );
  });
 
+
