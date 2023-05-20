@@ -9,6 +9,8 @@ const ingredients = [
 
 const myUlEl = document.querySelector("#ingredients");
 
+
+// чи коректно створювати таке сховище?
 const temporaryStorage = document.createElement('ul');
 
 ingredients.forEach((elem) => {
@@ -22,3 +24,14 @@ ingredients.forEach((elem) => {
 
 myUlEl.append(...temporaryStorage.childNodes);
 
+
+
+
+
+
+// Альтернатива.
+
+// const result = ingredients.map(
+//     (elem) => `<li>${elem}</li>`).join("");
+  
+//  myUlEl.insertAdjacentHTML("afterbegin", result);
